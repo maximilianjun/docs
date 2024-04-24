@@ -45,7 +45,7 @@ Users Table
 ```sql
 SELECT *,
     LAG(age, 1) OVER (
-  ORDER BY age ASC) AS previous_age
+  ORDER BY age DESC) AS previous_age
 FROM Users;
 ```
 
